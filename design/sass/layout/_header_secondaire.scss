@@ -1,0 +1,30 @@
+   /* ------------------------------------------------------------------ HEADER PAGE RESTAURANTS ---------------------------------------------------------------------------
+   ------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    #header_secondaire
+    {
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        top: 0px;
+        background-color: #fff;
+        padding: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        h1 
+        {
+            font-family: 'Shrikhand', cursive;
+            font-size: 30px;
+            margin: 20px auto;
+        }
+            i 
+            {
+                font-weight: 900;
+                font-size: 30px;
+                margin-left: 25px;   
+            }
+
+    }
+   
+  

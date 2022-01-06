@@ -1,0 +1,63 @@
+/* ------------------------------------------------------------------ Page-Loading---------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.loader
+{
+    position: fixed;    
+    background-color: #fff;
+    opacity: 0.9;
+    height: 100vh;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: disappear ;
+    animation-duration: 200ms; 
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transform-origin: top; 
+    span
+    {
+        background: $primarycolor;
+        font-size: 40px;
+        padding: 20px;
+        border-radius: 50px;
+        color: #fff;
+        font-family: 'Shrikhand', cursive; 
+        @keyframes disappear
+        {
+            from{
+                transform: scale(1);
+                }
+        
+            to{
+                transform: scale(0);
+              }
+        }   
+    }
+}
+    
+
+
+.fa-circle
+{
+    font-size: 150px;
+    background: $primarycolor;
+    color: #fff;
+    margin-bottom: 60px;
+    border-radius: 90px;
+}
+
+/* --------------------------------------------------- Media queries------ ---------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.loader
+{
+    span
+    {
+        font-size: 25px;
+        padding: 15px;
+    }
+}  
