@@ -1,0 +1,88 @@
+/* --------------------------------------------------- Section Functioning principal -----------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.functioning
+{    
+    counter-reset: numbers;
+    margin-top: 70px;
+        h2
+        {
+            margin-left: 25px;
+            font-size: 30px;
+        }
+            ol
+            {
+                margin: 0px 0px 70px -30px;   
+                display: flex;
+                justify-content: space-between;
+            }    
+                li
+                {
+                    background-color: $primarycolor;
+                    border-radius: 20px;
+                    margin: 30px;
+                    padding: 18px;
+                    width: 29%; 
+                    box-shadow: 0 5px 15px grey;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 17px;
+                    font-weight: 500;                    
+                    &:hover i
+                        {
+                            transform: scale(1.1);
+                            color: #9356dc;
+                        }                    
+                            &::before
+                            {
+                                list-style: none;
+                                content: counter(numbers);
+                                counter-increment: numbers;
+                                color: #fff;
+                                background-color: #9356dc;
+                                border-radius: 20px;
+                                height: 35px;
+                                width: 35px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                left: -35px;
+                            }    
+                                &:hover
+                                {   
+                                    background-color: #ff79da21;
+                                }
+                                    p
+                                    {
+                                        margin-left: 15px;
+                                    }
+                }        
+                                        i
+                                        {
+                                            font-size: 25px;
+                                            margin-left: -15px;
+                                        }
+                   
+}
+
+/* ----------------------------------------- functioning Media queries ---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 830px)
+{
+    .functioning
+    {
+       ol 
+       {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+       }
+       li
+       {
+        width: 100%;
+        margin: 10px 30px
+       }
+    }
+}    

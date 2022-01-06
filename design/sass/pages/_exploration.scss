@@ -1,0 +1,36 @@
+/* --------------------------------------------------- Section exploration principal -----------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+         
+.exploration
+{
+    background-color: $primarycolor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h2
+    {
+        margin-top: 60px;
+        font-size: 32px;
+    }    
+        p
+        {
+            margin: 0 auto;
+            font-size: 20px;
+        }            
+            a
+            {
+                text-decoration: none;
+                color: #fff;
+                padding: 20px 30px;
+                margin: 50px auto;
+                background-image: $gradientcolor;
+                border-radius: 32px;
+                font-weight: 500;
+                box-shadow: 2px 1px 16px #ada6a6;
+                &:hover
+                {                    
+                    transform: scale(1.1);
+                }
+            }        
+}

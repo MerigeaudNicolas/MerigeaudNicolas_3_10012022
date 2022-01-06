@@ -1,0 +1,117 @@
+/* --------------------------------------------- Section restaurants principal ----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.restaurants
+{
+    background-color: $primarycolor;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    h2
+    {
+        padding: 60px 0 15px 0;
+        font-size: 30px;
+        margin-left: 25px;
+        width: 100%;
+    }   
+        .photos
+        {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+            .element
+            {
+                width: 45%;
+                background-color: #fff;
+                margin: 20px ;
+                border-radius: 20px;
+                box-shadow: 2px 1px 16px #ada6a6;
+                position: relative;
+                &:hover
+                {
+                    transform: scale(1.1);
+                }
+                    .section_restaurants_news
+                    {
+                        background-color: #99e2d0;
+                        border-radius: 5px;
+                        color: #1f997c;
+                        font-weight: 500;
+                        padding: 8px;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;  
+                        animation-duration: 1.2s;
+                        animation-name: flash;
+                        animation-iteration-count: infinite;
+                        transition: none;
+                    }
+                        @keyframes flash
+                            {
+                                0%{opacity: 1;}
+                                40%{opacity: 0;}
+                                100%{opacity: 1;}
+                            }    
+                                h3
+                                {
+                                    margin: 5px 0 0 10px;
+                                }
+                                    p
+                                    {
+                                        margin: 5px 0 5px 10px;
+                                    }
+                                        i
+                                        {
+                                            font-size: 35px;
+                                        }
+                                            .heart
+                                            {
+                                                height: 5px;
+                                                .fa-heart
+                                                {
+                                                    width: 30px;
+                                                }
+                                                .far
+                                                {
+                                                    position: relative;
+                                                    font-size: 24px;
+                                                    margin-left: 85%;
+                                                    bottom: 41px;
+                                                }
+                                                    .fas
+                                                    {
+                                                        position: relative;
+                                                        font-size: 24px;
+                                                        margin-left: 85%;
+                                                        bottom: 66px;
+                                                        background-image: $gradientcolor;
+                                                        color: transparent;
+                                                        -webkit-background-clip: text;
+                                                        opacity: 0;
+                                                        &:hover
+                                                            {
+                                                                opacity: 1;
+                                                            }
+                                                    }
+                                            }
+            }
+        
+}
+
+
+/* --------------------------------------------- restaurants Media queries ---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 830px)
+{
+   .restaurants
+    {
+        .element
+        {
+            width: 100%;
+        }
+    } 
+}
+
