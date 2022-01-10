@@ -39,7 +39,7 @@
                                 list-style: none;
                                 content: counter(numbers);
                                 counter-increment: numbers;
-                                color: #fff;
+                                color: $primarycolor;
                                 background-color: $functioningcolor;
                                 border-radius: 20px;
                                 height: 35px;

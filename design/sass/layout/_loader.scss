@@ -4,7 +4,7 @@
 .loader
 {
     position: fixed;    
-    background-color: #fff;
+    background-color: $primarycolor;
     opacity: 0.9;
     height: 100vh;
     inset: 0;
@@ -24,7 +24,7 @@
         font-size: 40px;
         padding: 20px;
         border-radius: 50px;
-        color: #fff;
+        color: $primarycolor;
         font-family: 'Shrikhand', cursive; 
         @keyframes disappear
         {
@@ -45,7 +45,7 @@
 {
     font-size: 150px;
     background: $gradientcolor;
-    color: #fff;
+    color: $primarycolor;
     margin-bottom: 60px;
     border-radius: 90px;
 }
