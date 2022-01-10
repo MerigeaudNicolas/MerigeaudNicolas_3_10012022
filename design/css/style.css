@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* -------------------------------------------------------------------------- GENERAL --------------------------------------------------------------------------
    ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 * {
@@ -64,8 +65,7 @@ li {
   border-radius: 90px;
 }
 
-/* ------------------------------------------------ Media queries Loader ------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------ Media queries Loader ------------------------------------------------------------------------------*/
 .loader span {
   font-size: 25px;
   padding: 15px;
@@ -83,30 +83,6 @@ li {
   font-family: "Shrikhand", cursive;
   text-align: center;
   font-size: 30px;
-}
-
-/* ------------------------------------------------------------------ HEADER PAGE RESTAURANTS ---------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#header_secondaire {
-  width: 100%;
-  position: fixed;
-  z-index: 3;
-  top: 0px;
-  background-color: #fff;
-  padding: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-#header_secondaire h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 30px;
-  margin: 20px auto;
-}
-#header_secondaire i {
-  font-weight: 900;
-  font-size: 30px;
-  margin-left: 25px;
 }
 
 /* --------------------------------------------------- Location principal ---------------------------------------------------------------------------
@@ -185,14 +161,14 @@ li {
 }
 .functioning li:hover i {
   transform: scale(1.1);
-  color: #9356dc;
+  color: #9356DC;
 }
 .functioning li::before {
   list-style: none;
   content: counter(numbers);
   counter-increment: numbers;
   color: #fff;
-  background-color: #9356dc;
+  background-color: #9356DC;
   border-radius: 20px;
   height: 35px;
   width: 35px;
@@ -213,8 +189,7 @@ li {
   margin-left: -15px;
 }
 
-/* ----------------------------------------- functioning Media queries ---------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------- functioning Media queries -----------------------------------------------------------------------------*/
 @media screen and (max-width: 830px) {
   .functioning ol {
     display: flex;
@@ -317,27 +292,42 @@ li {
   opacity: 1;
 }
 
-/* --------------------------------------------- restaurants Media queries ---------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------- restaurants Media queries -----------------------------------------------------------------------------*/
 @media screen and (max-width: 830px) {
   .restaurants .element {
     width: 100%;
   }
 }
-/* --------------------------------------------------- Main ----------------------------------------------------------------------------------------
+/* ------------------------------------------------------------------ HEADER PAGE RESTAURANTS ---------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#header_secondaire {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  background-color: #fff;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#header_secondaire h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  margin: 20px auto;
+}
+#header_secondaire i {
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+/* --------------------------------------------------- Main menu restaurant --------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 main img {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
-}
-
-.container {
-  background-color: #f7f7f7;
-  border-radius: 48px 48px 0px 0px;
-  margin-top: -60px;
-  position: relative;
-  z-index: 2;
 }
 
 .title {
@@ -368,6 +358,14 @@ main img {
 .fa-heart {
   width: 30px;
   font-size: 24px;
+}
+
+.container {
+  background-color: #f7f7f7;
+  border-radius: 48px 48px 0px 0px;
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
 }
 
 .menu {
@@ -443,6 +441,7 @@ main img {
   color: #fff;
   font-size: 26px;
 }
+
 @keyframes slidein {
   0% {
     transform: translateY(50%);
@@ -453,13 +452,15 @@ main img {
     opacity: 1;
   }
 }
-.menu .animation_2 {
+.animation_2 {
   animation-delay: 200ms;
 }
-.menu .animation_3 {
+
+.animation_3 {
   animation-delay: 400ms;
 }
-.menu .animation_4 {
+
+.animation_4 {
   animation-delay: 600ms;
 }
 
@@ -468,30 +469,7 @@ main img {
   transition-duration: 0.2s;
 }
 
-.button {
-  color: #fff;
-  width: 150px;
-  text-align: center;
-  margin: 50px auto;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  padding: 20px 20px;
-  background-image: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
-  border-radius: 32px;
-  font-weight: 500;
-  box-shadow: 2px 1px 16px #ada6a6;
-}
-.button:hover {
-  transform: scale(1.2);
-}
-
-.color_back {
-  background-color: #f7f7f7;
-  padding: 1px;
-}
-
-/*--------------------------------------------------- Media queries------ ---------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------- Media queries menu restaurants ----------------------------------------------------------------------------*/
 @media screen and (max-width: 1050px) {
   .menu {
     flex-direction: column;
@@ -524,6 +502,27 @@ main img {
     font-size: 14px;
   }
 }
+.color_back {
+  background-color: #f7f7f7;
+  padding: 1px;
+}
+.color_back .button {
+  color: #fff;
+  width: 150px;
+  text-align: center;
+  margin: 50px auto;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  padding: 20px 20px;
+  background-image: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
+  border-radius: 32px;
+  font-weight: 500;
+  box-shadow: 2px 1px 16px #ada6a6;
+}
+.color_back .button:hover {
+  transform: scale(1.2);
+}
+
 /* --------------------------------------------------- FOOTER GENERAL ----------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
@@ -551,8 +550,7 @@ footer h3 {
   margin: 30px;
 }
 
-/* --------------------------------------------------- Media queries footer ---------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------- Media queries footer général --------------------------------------------------------------*/
 footer {
   flex-direction: column;
 }

@@ -3,7 +3,7 @@
 
 .restaurants
 {
-    background-color: $primarycolor;
+    background-color: $backcolor;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -35,7 +35,7 @@
                 }
                     .section_restaurants_news
                     {
-                        background-color: #99e2d0;
+                        background-color: $animationcolor;
                         border-radius: 5px;
                         color: #1f997c;
                         font-weight: 500;
@@ -101,8 +101,7 @@
 }
 
 
-/* --------------------------------------------- restaurants Media queries ---------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------- restaurants Media queries -----------------------------------------------------------------------------*/
 
 @media screen and (max-width: 830px)
 {

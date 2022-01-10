@@ -18,7 +18,7 @@
             }    
                 li
                 {
-                    background-color: $primarycolor;
+                    background-color: $backcolor;
                     border-radius: 20px;
                     margin: 30px;
                     padding: 18px;
@@ -32,7 +32,7 @@
                     &:hover i
                         {
                             transform: scale(1.1);
-                            color: #9356dc;
+                            color: $functioningcolor;
                         }                    
                             &::before
                             {
@@ -40,7 +40,7 @@
                                 content: counter(numbers);
                                 counter-increment: numbers;
                                 color: #fff;
-                                background-color: #9356dc;
+                                background-color: $functioningcolor;
                                 border-radius: 20px;
                                 height: 35px;
                                 width: 35px;
@@ -67,8 +67,8 @@
                    
 }
 
-/* ----------------------------------------- functioning Media queries ---------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------- functioning Media queries -----------------------------------------------------------------------------*/
+
 @media screen and (max-width: 830px)
 {
     .functioning

@@ -1,0 +1,25 @@
+
+.color_back
+{
+    background-color: $backcolor;
+    padding: 1px;
+    .button
+    {
+        color: #fff;
+        width: 150px;
+        text-align: center;
+        margin: 50px auto;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        padding: 20px 20px;
+        background-image: $gradientcolor;
+        border-radius: 32px;
+        font-weight: 500;
+        box-shadow: 2px 1px 16px #ada6a6;
+        &:hover
+        {
+            transform: scale(1.2);
+        }
+    }
+}    
+

@@ -1,12 +1,14 @@
-
 @import './base/fondation';
 @import './utils/variable';
 @import './layout/loader';
 @import './layout/header_principal';
-@import './layout/header_secondaire';
 @import './pages/location';
 @import './pages/exploration';
 @import './pages/functioning';
 @import './pages/restaurants';
-@import './components/menu_img';
+@import './layout/header_secondaire';
+@import './components/main_img';
+@import './pages/title_page_restaurants';
+@import './pages/container_menu_page_restaurants';
+@import './components/bouton';
 @import './layout/footer';
